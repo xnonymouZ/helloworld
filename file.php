@@ -8,16 +8,11 @@ $fName = $_POST['filename'];
 $fInput = $_POST['fileinput'];
 
 if ($fName && $fInput) {
-
-  $myfile = fopen($fname, "w") or die("Unable to open file!");
+  $myfile = fopen($_SERVER['DOCUMENT_ROOT'] . $fName, "wb") or die("Unable to open file!");
   fwrite($myfile, $fInput);
-
   fclose($myfile);
-
 } else {
-
   echo "";
-
 }
 ?>
 
