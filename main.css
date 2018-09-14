@@ -1,0 +1,38 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background: #454545;
+    color: #fff;
+}
+
+body {
+    display: block;
+    position: relative;
+}
+
+div {
+    display: block;
+    padding: 20px;
+}
+
+input[type=text] {
+    display: block;
+    min-width: 320px;
+    max-width: 720px;
+    width: inherit;
+    padding: 6px 12px;
+    font-size: 18px;
+}
+
+textarea {
+    display: block;
+    min-width: 320px;
+    max-width: 720px;
+    min-height: 360px;
+    max-height: 480px;
+    width: inherit;
+    padding: 6px 12px;
+    font-size: 18px;
+}
