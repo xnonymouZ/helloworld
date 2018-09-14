@@ -29,7 +29,7 @@
         xhttp.send();
     },
     live: function (r) {
-        this.xhttp(r, 'db/user/auth/ethereal/test/database/index.php', 'GET');
+        this.xhttp(r, '/db/user/auth/ethereal/test/database/index.php', 'GET');
         return "localStorage.getItem(" + r + ")";
     },
     init: function () {
