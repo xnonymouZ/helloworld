@@ -23,18 +23,15 @@
      <option value=".txt">Text</option>
      <option value=".php">PHP</option>
      <option value=".html">HTML</option>
-     <option value="-wox">No Extensiton</option>
      <option value="-no-exe">No Extensiton</option>
    </select>
-   <input type="text" name="fileinput" placeholder="Insert text to your file" value="<?php echo $_POST['fileinput']; ?>"> 
-   <input type="submit" name="submit" value="Submit"> 
    <textarea name="fileinput" placeholder="Insert text to your file"> 
      <?php 
        echo $_POST['fileinput']; 
      ?>
    </textarea>
    <input type="hidden" name="submit" value="Submit">
-  <button name="submit">Create OR Edit File</button>
+   <button name="submit">Create OR Edit File</button>
 </form>
    
  <?php
